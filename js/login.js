@@ -7,10 +7,10 @@ document.getElementById('btn-submit').addEventListener('click',function(){
    const  passwordInputFiledValue=passwordInputFiled.value;
 
    if(emailInputValue=='baperbank@gmail.com'&&passwordInputFiledValue==12345){
-    console.log('yes')
+    window.location.href='bank.html'
    }
    else{
-    console.log('no')
+    alert ('alert !!! invalid user')
    }
 })
 //step2 get the email address inside the input email field
