@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigate to bank inside page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -20,15 +21,15 @@
             <div class="grid grid-cols-3 gap-4 text-white mx-auto w-9/12">
                 <div class="bg-lime-600 p-5 rounded-xl">
                     <h4 class="text-5xl">Deposit</h4>
-                    <h2 id="deposit-total" class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$ <span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-green-300 p-5 rounded-xl">
                     <h4 class="text-5xl">Withdraw</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$ <span id="withdraw-total">00</span></h2>
                 </div>
                 <div class="bg-teal-400 p-5 rounded-xl">
                     <h4 class="text-5xl">Balance</h4>
-                    <h2 class="text-5xl">$1200</h2>
+                    <h2 class="text-5xl">$ <span id="balance-total">1200</span></h2>
                 </div>
             </div>
         </section>
@@ -51,6 +52,7 @@
         </section>
     </main>
     <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 
 </html>
